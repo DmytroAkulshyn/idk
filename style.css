@@ -5,6 +5,7 @@
 *{
     margin: 0;
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 section{
@@ -260,4 +261,73 @@ section{
     max-width: 250px;
     margin-left: 40px;
     margin-top: 10px;
+}
+
+footer{
+    background-color: #200153;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+}
+
+.footer-info p{
+    font-family: 'Comfortaa';
+    padding-bottom: 10px;
+}
+
+.footer-year p{
+    font-family: 'Comfortaa';
+    letter-spacing: 1.5px;
+}
+
+.footer-links a{
+    margin-right: 15px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.fixed-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    padding-right: 150px;
+
+}
+
+.nav-link{
+    color: #000;
+    text-decoration: none;
+    font-family: 'Comfortaa';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 12px;
+    width: 112px;
+    height: 40px;
+
+}
+
+.logo{
+    color: #BBFF2C;
+    font-size: 80px;
+    padding-left: 50px;
+}
+
+.active{
+   background-color: #BBFF2C;
 }

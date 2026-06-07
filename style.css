@@ -110,6 +110,7 @@ section{
 @keyframes moving {
     from{transform: translateY(0px);}
     to{transform: translateY(70px);}
+    
 }
 
 .title{
@@ -145,10 +146,10 @@ section{
     background-repeat: no-repeat;
     width: 376px;
     height: 346px;
-    display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 20px;
+    display: flex;
     flex-direction: column;
     position: relative;
 }
@@ -156,12 +157,107 @@ section{
 .about-card p{
     color: #000;
     font-size: 17px;
-    align-self: start;
-    padding-left: 20px;
+    align-items: start;
+    margin-left: 20px;
     line-height: 25px;
-    font-family: 'Comfortaa';
+    font-family: "Comfortaa";
 }
 
 .about-card img{
     padding-bottom: 20px;
+}
+
+
+
+
+.skills-card{
+    background-image: url(img/form3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.skills-card p{
+    color: #000;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+    font-family: "Comfortaa";
+}
+
+.moving-planet2{
+    background: url(img/moving-planet2.png);
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 200px;
+    position: absolute;
+    bottom: 70px;
+    left: 0px;
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+.works-block img{
+    margin: 0 20px;
+    width: 27%;
+    box-shadow: 7px 7px 0 #000;
+}
+
+.comments-block{
+    max-width: 1150px;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.comments-card{
+    background-image: url(img/card.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments-card h3{
+    font-family: 'Comfortaa';
+    font-size: 18px;
+    padding: 10px;
+}
+
+.comments-card p{
+    font-family: 'Comfortaa';
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.comment{
+    background-image: url(img/comment.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 327px;
+    height: 161px;
+    text-align: center;
+}
+
+.comment p{
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    max-width: 250px;
+    margin-left: 40px;
+    margin-top: 10px;
 }

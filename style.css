@@ -67,7 +67,7 @@ section{
 .main-subtitle{
     color: #2B2D35;
     font-size: 20px;
-    font-family: 'Comfortaa' sans-serif;
+    font-family: 'Comfortaa';
 }
 
 .button{
@@ -333,11 +333,46 @@ nav{
 }
 
 
+.mobile-button{
+    display: none;
+    padding-top: 10px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+}
+.hide{
+    display: none;
+}
+
+.mobile-menu{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-color:#200153;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.mobile-nav{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-nav-links, .nav-link{
+    margin-bottom: 30px;
+    width: 210px;
+    height: 50px;
+}
 
 @media (min-width: 1000px) {
-    .nav-link{
-        display: none;
-    }
     .logo{
         font-size: 40px;
         padding-left: 20px;
@@ -430,6 +465,13 @@ nav{
 }
 
 @media (max-width: 700px ) {
+    .nav-link{
+        display: none;
+    }
+    .mobile-button{
+        display: block;
+    }
+
     .about-block{
 
         flex-direction: column;
@@ -444,4 +486,40 @@ nav{
         width: 100px ;
         height: 5px;
     }
+
+    .comments-card h3{
+        font-size: 15px;
+    }
+
+    .comments-card p{
+        font-size: 9px;
+    }
+    .comments-card{
+        height: 200px;
+        width: 120px;
+    }
+
+    .comments-card img{
+        width: 100px;
+    }
+
+    .comment p{
+        font-size: 20px;
+    }
+
+    .comments-block{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mobile-nav-links a{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        padding: 10px 100px;
+    }
+
 }
+
